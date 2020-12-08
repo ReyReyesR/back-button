@@ -1,0 +1,333 @@
+/*
+.transform-living-social {
+  //font-family: $LSfont-regular;
+
+  .header {
+      &__links {
+        .header__link {
+          display: inline !important; //Fix for the username having display:none !important on Windows Chrome
+          position: relative;
+          top: -7px;
+        }
+      }
+      &__flags {
+        &.right-align {
+            text-align: right;
+        }
+
+        a {
+            display: inline-block;
+            width: 4.5%;
+            line-height: 0;
+            margin-right: .5rem;
+            padding: .3rem;
+            border-radius: 6px;
+
+            img {
+                width: 100%;
+            }
+
+            &.active {
+                border: 1px solid $color-shakespeare;
+            }
+        }
+
+        @media (max-width: $screen-sm - 1) {
+          a {
+            width: 10%;
+          }
+        }
+      }
+
+      .search-input__search-box, .subscribe-input__email-input {
+        text-transform: lowercase;
+      }
+
+      .header__logo {
+        @media (min-width: $screen-sm) {
+          width: 13%;
+        }
+      }
+  }
+
+  .subscribe {
+    &-lightbox__form-wrapper {
+      box-shadow: none;
+      border: none;
+    }
+
+    &-form__email-input {
+      text-transform: lowercase;
+    }
+  }
+
+  .form__item {
+    &:focus {
+      border-color: $color-viking;
+    }
+  }
+
+  .navigation {
+    .navigation__item {
+        &--more {
+            .navigation__link {
+                text-transform: lowercase;
+
+                i {
+                font-style: normal;
+                }
+            }
+        }
+        .navigation__link {
+            text-transform: lowercase;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__more-item {
+      a {
+        text-transform: lowercase;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .sub-nav__items {
+    text-transform: lowercase;
+  }
+
+  .location-select {
+    &__current-location {
+      &:after {
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  .basket {
+    @media (min-width: $screen-sm) {
+      &__icon {
+        filter: invert(59%) sepia(24%) saturate(1066%) hue-rotate(151deg) brightness(96%) contrast(95%);
+      }
+
+      &__icon--no-items {
+        filter: invert(97%) sepia(84%) saturate(40%) hue-rotate(217deg) brightness(106%) contrast(72%);
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm - 1) {
+    .gift-finder {
+        .search-filters {
+            .panel {
+                background-color: $color-shakespeare;
+
+                .search-filters--query {
+                    color: $color-white;
+                }
+
+                .custom-radio-button {
+                    input:checked+span {
+                        color: $color-shakespeare;
+                    }
+                    span {
+                        color: $color-white;
+                        border-color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__location-select {
+        padding: 0 15px;
+
+        @media (max-width: $screen-sm) {
+          padding: 0 10px;
+        }
+    }
+
+    .location-select__items {
+      height: calc(80vh - 143px);
+    }
+  }
+
+  .bcal-button {
+    background: $color-victoria;
+    border-bottom-color: $color-jacarta;
+    text-transform: lowercase;
+
+    &:hover {
+      background: $color-scampi;
+    }
+
+    &--is-disabled {
+      background: $wowcher-grey;
+      border-bottom-color: $color-dove-gray;
+
+      &:hover {
+        background-color: $wowcher-grey;
+      }
+    }
+  }
+
+  .button--is-primary {
+    border-bottom: 3px solid $color-jacarta;
+    text-transform: lowercase;
+  }
+  .button--is-primary:hover {
+    background-color: $color-scampi;
+  }
+  .button--is-secondary,
+  .button--is-quaternary {
+    border-radius: 5px;
+    border: 1px solid $color-shakespeare;
+    background-color: $color-shakespeare;
+    border-bottom: 3px solid $color-bostan-blue;
+    color: $color-white;
+    text-transform: lowercase;
+  }
+  .deal {
+    h2, &-travel-price-splat__label, &-side-price-splat__label, &-main-price-splat__label {
+      text-transform: lowercase;
+    }
+  }
+  .deal-bullet-list__item {
+    background: none;
+    padding-left: 29px;
+  }
+  .deal-bullet-list__item::before {
+    color: $color-bostan-blue;
+    content: "\2022";
+    font-size: 1.5em;
+    padding-right: 0.85em;
+    margin-left: -28px;
+    position: relative;
+    top: 0em;
+  }
+  .deal-main-price-splat,
+  .deal-details-price-splat,
+  .deal-side-price-splat,
+  .deal-travel-price-splat {
+    background: transparent url("https://resources.wowcher.co.uk/images/ls/LS-Blobs-yellow.png") 0 0 no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .deal-side-price-splat {
+    background-position: 18px 20px;
+  }
+  .deal-details-narrow__price-splat .deal-details-price-splat {
+    background-position: 22px -26px;
+  }
+  .deal-travel-price-splat {
+    background-position: 19px -34px;
+  }
+  .deal-travel-price-splat--is-state-compact {
+    background-size: cover;
+    background-position: 15px -26px;
+  }
+  .claim-credit__title {
+    color: $color-fuel-yellow;
+    font-size: 19px;
+  }
+  .claim-credit__image-wrapper {
+    display: none;
+  }
+  .claim-credit__button {
+    background: linear-gradient(180deg, $color-shakespeare 0, $color-shakespeare) !important;
+    border-bottom-color: $color-bostan-blue;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+  }
+
+  .button--is-quaternary {
+    color: $color-mine-shaft;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+    background-image: url('https://resources.wowcher.co.uk/images/ls/buy-as-gift-ribbon.svg'), linear-gradient(to bottom,$color-alabaster 0,$color-silver 100%);
+  }
+
+  .button--is-secondary:hover {
+    background-color: $color-viking;
+  }
+
+  .choose-flight {
+    background-color: $color-victoria;
+  }
+
+  .button--is-quaternary:hover {
+      text-decoration: none;
+      background-image: url('https://resources.wowcher.co.uk/images/ls/buy-as-gift-ribbon.svg'), linear-gradient(to bottom,$color-silver 0,$color-alabaster 100%);
+      background-color: $color-white;
+  }
+
+  .deal-status-bar.pink-gradient {
+    background: $color-shakespeare;
+    background-image: linear-gradient(180deg, $color-shakespeare 0, $color-viking);
+  }
+  .deal-lead__status-bar {
+    padding: 0;
+  }
+  .deal-container__main .deal-status-bar {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .deals__item .deal-status-bar {
+    border-bottom-color: $color-bostan-blue;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    text-transform: lowercase;
+  }
+
+  .deals__item .deal-container__main .deal-status-bar {
+    border-bottom-width: 0;
+  }
+
+  .deal-product {
+    &-selector__heading, &-default__label {
+      text-transform: lowercase;
+    }
+  }
+
+  .reviews__label,
+  .deal-details-price-splat__label,
+  .deal-sales-summary__wrapper,
+  .deal-details-narrow__heading,
+  .collapsable__label,
+  .tabbed-lists__tab-title,
+  .popeye-modal-container__header,
+  .read-more__label, .tabs__items, .deal-stats__label,
+  .countdown__label, .countdown__headings, .bcal-step, .bcal-stay-dates,
+  .bcal-prices__sub-title, .bcal-choose-quantity__label,
+  .bcal-button-more-flights, .bcal-price-per-person, .bcal-flight__direction {
+    text-transform: lowercase;
+  }
+
+  .invasive-health {
+    &__header {
+        background-color: $color-victoria;
+    }
+
+    &__content {
+        &-title {
+            color: $color-fuel-yellow;
+        }
+    }
+
+    @media (max-width: $screen-sm) {
+      .invasive-health-image {
+        width: 44%;
+      }
+
+      &__content {
+        float: none;
+        width: auto;
+
+        &.col-xs-9 {
+          float: none;
+        }
+      }
+    }
+  }
+}
+*/

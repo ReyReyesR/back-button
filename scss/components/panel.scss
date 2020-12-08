@@ -1,0 +1,38 @@
+@import '../_imports';
+
+.panel {
+  background: $color-white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  overflow: hidden;
+
+  /*&--align-left {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+
+  &--no-margin {
+    margin-bottom: 0px;
+  }
+
+  &--extra-padding {
+    padding: 20px 30px;
+
+    @media (max-width: $screen-sm - 1) {
+      padding: 15px 20px;
+    }
+  }
+
+  a {
+    color: $wowcher-pink;
+  }*/
+
+}

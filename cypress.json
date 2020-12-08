@@ -1,0 +1,4 @@
+{
+  "reporter": "mochawesome",
+  "baseUrl": "http://localhost:3000"
+}

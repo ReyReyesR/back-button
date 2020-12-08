@@ -1,0 +1,111 @@
+@import '../../scss/_imports';
+@import "~bootstrap/scss/mixins";
+
+$base__heading-size: 32;
+
+.static {
+  &__content-container {
+    @include linear-gradient(rgba(242,242,242,1), rgba(255,255,255,1));
+  }
+
+  &__content {
+    padding: 12px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 140%;
+    font-weight: 500;
+  }
+
+  h1 {
+    @include font-size($base__heading-size / 1.0);
+  }
+
+  h2 {
+    @include font-size($base__heading-size / 1.2);
+  }
+
+  h3 {
+    @include font-size($base__heading-size / 1.4);
+  }
+
+  h4 {
+    @include font-size($base__heading-size / 1.6);
+  }
+
+  h5 {
+    @include font-size($base__heading-size / 1.8);
+  }
+
+  h6 {
+    @include font-size($base__heading-size / 2.0);
+  }
+
+  ul {
+    margin: 0 0 16px 25px;
+  }
+
+  a {
+    color: $wowcher-blue;
+    text-decoration: underline;
+  }
+
+  .faq-question {
+    font-weight: 700;
+  }
+
+  .slide-panel + div {
+    display: block!important;
+  }
+}
+
+
+
+
+
+
+
+/*.body {
+  @include font-size(14);
+  line-height: 1.4;
+  background: $color-white url("https://resources.wowcher.co.uk/images/bg-tile-default.png") repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  color: $color-mine-shaft;
+
+  &.bg-tile-promotion {
+    @include font-size(14);
+    line-height: 1.4;
+    background: $color-white url("https://resources.wowcher.co.uk/images/bg-tile-promotion.gif") repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    color: $color-mine-shaft;
+  }
+
+  &.bg-tile-vip {
+    background: linear-gradient($color-vip-black, $color-black);
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+
+  &.popeye-modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}*/

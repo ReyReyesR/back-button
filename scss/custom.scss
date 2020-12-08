@@ -1,0 +1,13 @@
+/* Bootstrap overrides before Bootstrap import */
+
+// old site values
+$container-max-widths: (
+        sm: 750px,
+        md: 750px, // 720
+        lg: 970px, // 960
+        xl: 1170px // 1140
+) !default;
+
+$font-family-sans-serif: none !default;
+
+@import "bootstrapCustom";

@@ -1,0 +1,328 @@
+/**
+ * Helpers
+ * @group css.base.helpers
+ */
+/*
+// Clearfix
+.clearfix {
+    zoom: 1;
+    &:before, &:after { content: ""; display: table; }
+    &:after { clear: both; }
+}
+
+// Hidden - Hide from both screenreaders and browsers:
+.hdn {
+    display: none;
+    visibility: hidden;
+}
+
+// Visually Hiddenss
+.vhdn {
+    @include vhdn;
+}
+
+.vhdn-off {
+    @include vhdn-off;
+}
+
+// Visually Hidden on Focus - Extends the .vhdn class to allow the element to be focusable
+.vhdn.focus:active,
+.vhdn.focus:focus {
+    @include vhdn-off;
+}
+
+// Invisible - Hide visually and from screen readers, but maintain layout
+.invs {
+    visibility: hidden;
+}
+
+// Responsive Images
+.img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 0;
+}
+
+.strikethrough {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        right: 0;
+        width: 120%;
+        margin-left: -10%;
+        border-top: 1px solid;
+        transform: rotate(-11deg);
+    }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.error {
+  color: $color-cinnabar;
+}
+
+ul.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &.list-inline {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.tint-gradient {
+  background: linear-gradient(to bottom, rgba(125,185,232,0.001) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0.7) 100%);
+}
+
+.tint-gradient-reverse {
+  background: linear-gradient(to top, rgba(125,185,232,0.001) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,0.7) 100%);
+}
+
+.blue-gradient {
+  @include linear-gradient($color-dodger-blue, $color-blue-ribbon);
+
+  &:hover {
+    @include linear-gradient($color-blue-ribbon, $color-blue-ribbon);
+  }
+}
+
+.green-gradient {
+  @include linear-gradient($color-fern, $color-apple1);
+}
+
+.pink-gradient {
+  @include linear-gradient($wowcher-pink, $color-lipstick);
+}
+
+.gold-gradient {
+  @include linear-gradient(#ebd193, #be9f5b);
+  border: solid white;
+  border-width: 0 1px 1px 1px;
+}
+
+.vip-gradient {
+  @include linear-gradient($color-vip-black, $color-black);
+}
+
+// Just a temporary helper for rapid layout
+.flex {
+  display: flex;
+
+  &__panel {
+    margin: 10px 0;
+  }
+
+  &__item {
+
+    &--spacer {
+      margin-right: 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--justify-left {
+    justify-content: left;
+  }
+
+  &--align-left {
+    align-items: left;
+  }
+
+  &--space-between > * {
+    justify-content: space-between;
+  }
+
+  &--space-around > * {
+    justify-content: space-around;
+  }
+}
+
+.horizontal-scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  &:before,
+  &:after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 10px;
+    top: 0;
+    height: 100%;
+  }
+
+  > * {
+    white-space: normal;
+  }
+
+  @media (min-width: $screen-sm) {
+    overflow: visible;
+  }
+}
+
+.select--bg-arrow {
+  display: inline-block;
+  cursor: pointer;
+  background-image: url('https://resources.wowcher.co.uk/images/select-box-arrow.png');
+  background-size: auto 20px;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  padding-right: 30px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+*/
+
+/**
+ *  Custom Radio Button
+ */
+
+/*
+ .custom-radio-button {
+  margin-bottom: 0;
+
+  // hide the browser's default radio button
+  input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    // style the radio button when the radio button is selected
+    &:checked + span {
+      background-color: $color-wild-sand;
+      color: $wowcher-pink;
+      border-color: $color-wild-sand;
+      font-weight: 500;
+    }
+  }
+
+  // style the radio button when the radio button is not selected
+  span {
+    background-color: $wowcher-pink;
+    color: $kobi;
+    @include font-size(14);
+    font-weight: 400;
+    border: 1px solid $kobi;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}
+*/
+
+/**
+ *  Custom Checkbox
+ */
+
+/*
+// customise the label (the checkbox container/wrapper)
+.custom-checkbox {
+  @include font-size(14);
+  @include user-select(none);
+  color: $wowcher-pink;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  width: 80%;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // create a custom checkbox
+  &__checkmark {
+    background-color: $color-wild-sand;
+    border-radius: 50%;
+    border: 2px solid $color-gray;
+    height: 20px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 20px;
+  }
+
+  // hide the browser's default checkbox
+  input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  // style the custom checkbox when the checkbox is checked
+  input:checked + &__checkmark {
+    background-color: $wowcher-pink;
+    border-color: $wowcher-pink;
+
+    // show the checkmark (tick) indicator when checked
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.text-divider {
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+
+  &::before {
+    content: '';
+    border-top: 1px solid $color-white;
+    @media (min-width: $screen-sm) {
+      border-top: 1px solid $color-dusty-gray;
+    }
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  &::after {
+    background-color: $color-wild-sand;
+    border: 1px solid $color-white;
+    padding: 0 12px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &--or {
+    &::after {
+      content: 'Or';
+    }
+  }
+}
+*/

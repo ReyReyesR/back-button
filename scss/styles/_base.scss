@@ -1,0 +1,99 @@
+
+/*@import "./_fonts.scss";
+@import "./_colours.scss";
+@import "~bootstrap/scss/mixins";
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-regular;
+  font-size: 62.5%;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+
+  &.no-scroll {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+}
+
+body {
+  @include font-size(14);
+  line-height: 1.4;
+  background: $color-white url("https://resources.wowcher.co.uk/images/bg-tile-default.png") repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  color: $color-mine-shaft;
+
+  &.bg-tile-promotion {
+    @include font-size(14);
+    line-height: 1.4;
+    background: $color-white url("https://resources.wowcher.co.uk/images/bg-tile-promotion.gif") repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    color: $color-mine-shaft;
+  }
+
+  &.bg-tile-vip {
+    background: linear-gradient($color-vip-black, $color-black);
+  }
+
+  &.no-scroll {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+
+  &.popeye-modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-size(14);
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-shakespeare;
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $font-regular;
+}
+
+.link {
+  cursor: pointer;
+}
+*/

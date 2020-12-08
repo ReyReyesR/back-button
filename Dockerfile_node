@@ -1,0 +1,25 @@
+FROM node:alpine
+
+WORKDIR /usr/app
+
+LABEL maintainer="Wowcher Ops <ops@wowcher.co.uk>"
+
+RUN apk --no-cache add curl
+RUN npm install --global pm2
+
+COPY ./package*.json ./
+COPY run_node.sh /usr/app/run_node.sh
+
+# Install dependencies
+RUN npm install
+
+# Copy all files
+COPY ./ ./
+
+# Build app
+RUN npm run build
+
+# Expose the listening port
+EXPOSE 3000
+
+ENTRYPOINT ["/usr/app/run_node.sh"]

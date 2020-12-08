@@ -1,0 +1,107 @@
+// ------------------------------------------------
+// Application Colours
+// ------------------------------------------------
+
+/**
+ * @group css.base.colours
+ * @param {color} $color-mine-shaft
+ * To name colours: http://chir.ag/projects/name-that-color/
+ */
+
+// Black to White
+$color-black: #000000;
+$color-vip-black: #2c2c2c;
+$color-cod-gray: #111111;
+$color-mine-shaft: #333333;
+$color-dove-gray: #666666;
+$color-white: #FFFFFF;
+$color-offwhite: #F0F0F0;
+
+// Greys
+$color-gray: #7F7F7F;               // darker still
+$color-silver-chalice: #b2b2b2;			// darker
+$color-dusty-gray: #979797;         // dark
+$color-silver: #8d7878;			        // silver, --quaternity bg
+$color-alto: #E0E0E0; 					    // main
+$color-gallery: #EEEEEE; 				    // light
+$color-header-button: #DBDBDB; 			// sign up, basket icon
+$color-wild-sand: #F6F6F6;          // light
+$color-alabaster: #fcfcfc;          // lighter
+$color-mercury: #e4e4e4;            // AHHH MY EYES!!!!
+
+// Wowcher Pinks
+$color-flirt: #C1007C;
+$color-siren: #780048; 					    // darkest
+$color-fresh-eggplant: #8F0055; 	  // darker
+$color-lipstick: #C90078; 				  // dark
+$color-hollywood-cerise: #EB008C; 	// main
+
+$kobi: #EC9ECD;
+
+// Greens
+$color-apple1: #548E3D; 				    // dark
+$color-apple2: #61A447; 				    // main
+$color-fern: #6BBA70;					      // light
+$color-fruit-salad: #5B9B4F;        // light
+
+// Oranges
+$color-tango: #F0812B; 					    // main
+$color-crusta: #FA8C35; 				    // light
+$color-yellow-orange: #FFA049; 			// lighter
+
+// Dark Blues
+$color-fun-blue: #176EAB; 				  // dark
+$color-steel-blue: #3C78AA; 			  // main
+$color-blue-ribbon: #006FFD;        // light
+$color-google__blue:  #4285f4;
+
+// Light Blues
+$color-calypso: #256781; 				    // darker
+$color-astral: #3289AC; 				    // dark
+$color-shakespeare: #3FACD7; 			  // main
+$color-viking: #65BCDF; 				    // light
+$color-cornflower: #8BCDE7; 			  // lighter
+$color-dodger-blue: #00B8FE;			  // lightest
+$color-bostan-blue: #389AC1;
+
+// Purples
+$color-jacarta: #3A3370; 				    // dark
+$color-victoria: #544AA1; 				  // main
+$color-scampi: #655CAA; 				    // light
+$color-wild-blue-wonder: #8780BD; 	// lighter
+
+// Yellows
+$color-hacienda: #8b6f16; 				  // darker
+$color-nugget: #ba941e; 				    // dark
+$color-fuel-yellow: #E9BA26; 			  // main
+$color-ronchi: #edc751; 				    // light
+$color-golden-sand: #f1d57c; 			  // lighter
+$color-golden-rod: #DAA520;
+
+$color-pearl-lusta: #FBF0D5;
+$color-twine: #C5A05F;
+
+// Reds
+$color-burnt-umber: #8d2524; 			  // darker
+$color-well-read: #bc3230; 				  // dark
+$color-cinnabar: #eb3f3c; 				  // main
+$color-burnt-sienna: #ef6562; 			// light
+$color-froly: #f38b8a; 					    // lighter
+
+// Brand
+$wowcher-blue: #1b94e4;
+$wowcher-pink: $color-hollywood-cerise;
+$wowcher-grey: #CCCCCC;
+$wowcher-navy: #334151;
+
+$facebook-blue: #0052a3;
+$twitter-blue: #4099FF;
+$instagram-blue: #125688;
+$pinterest-red: #C92228;
+$whatsapp-green: #25D366;
+
+$success-green: $color-fern;
+$error-red: $color-cinnabar;
+
+$soc-nasty-color: red;
+$soc-nice-color: rgb(1, 185, 1);

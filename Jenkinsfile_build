@@ -1,0 +1,18 @@
+library(
+  identifier: 'test@master',
+  retriever: modernSCM(
+    [
+      $class: 'GitSCMSource',
+      remote: 'https://bitbucket.org/wowcherdevops/jenkins_shared_libraries.git',
+      credentialsId: 'opsdev'
+    ]
+  )
+)
+
+npmReactBuild node: 'node12',
+              brand: 'wow',
+              server_name: 'react-fe',
+              aws_docker_registry: 'https://147453477443.dkr.ecr.eu-west-1.amazonaws.com',
+              aws_credentials: 'ecr:eu-west-1:jenkins_ecr_user',
+              ecr_repo_react: 'wowcher/react-fe',
+              ecr_repo_node: 'wowcher/react-node'
